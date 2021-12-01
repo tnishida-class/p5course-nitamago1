@@ -17,6 +17,11 @@ function draw(){
     b.x += b.vx;
     b.y += b.vy;
   }
+
+  if(count % 60 == 0){
+    const b = {x: width/2, y:height/2, size:20, vx: random(2) - 1, vy: random(2) -1};
+    balls.push(b);
+  }
 }
 
 function mouseDragged(){

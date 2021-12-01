@@ -7,13 +7,17 @@
 function setup() {
   createCanvas(100,100);
   background(196);
+
   for(let i = 0; i < 9; i++){
     // 変えるのはここから
-    if(i % 2 == 0){
-      strokeWeight(2);
+    if((i+1) / 3 <= 1){
+      strokeWeight(1);
+    }
+    else if((i+1) / 3 <= 2){
+      strokeWeight(3);
     }
     else{
-      strokeWeight(1);
+      strokeWeight(5);
     }
     // ここまでの間になります
     let x = i * 10 + 10;
